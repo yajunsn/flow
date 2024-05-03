@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-03T06:17:47.475Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="XvO8SBChIQ-gHjB79FCp" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-03T06:21:09.498Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="UjA4jpI4e9DGtkCH3pz7" version="24.3.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1360" dy="727" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -25,7 +25,7 @@
           <mxGeometry y="280" width="240" height="140" as="geometry" />
         </mxCell>
         <mxCell id="fFpk34Q_P3umQofqK6B3-34" value="predict_system.py TextSystem" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="436" y="40" width="290" height="480" as="geometry">
+          <mxGeometry x="436" y="40" width="290" height="370" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -41,11 +41,8 @@
         <mxCell id="fFpk34Q_P3umQofqK6B3-38" value="__call__" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="fFpk34Q_P3umQofqK6B3-34">
           <mxGeometry y="170" width="290" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-45" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Steps&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;1. dt_boxes, elapse = self.text_detector(img), &lt;br&gt;&lt;br&gt;2. dt_boxes = sorted_boxes(dt_boxes)&lt;br&gt;&lt;br&gt;3. srec_res, elapse = self.text_recognizer(img_crop_list)&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="fFpk34Q_P3umQofqK6B3-34">
-          <mxGeometry y="200" width="290" height="130" as="geometry" />
-        </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-46" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Steps&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;1. dt_boxes, elapse = &lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 31, 34); color: rgb(148, 85, 141);&quot;&gt;self&lt;/span&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 31, 34); color: rgb(188, 190, 196);&quot;&gt;.text_detector(img)&lt;br&gt;&lt;br&gt;2.&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;tools.infer.predict_det&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;tools.infer.predict_cls&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="fFpk34Q_P3umQofqK6B3-34">
-          <mxGeometry y="330" width="290" height="130" as="geometry" />
+        <mxCell id="fFpk34Q_P3umQofqK6B3-46" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Steps&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;1.&amp;nbsp;dt_boxes, elapse = self.text_detector(img)&lt;br&gt;&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 31, 34); color: rgb(188, 190, 196);&quot;&gt;&lt;br&gt;&lt;/span&gt;2. dt_boxes = sorted_boxes(dt_boxes)&lt;br&gt;&lt;font face=&quot;JetBrains Mono, monospace&quot; color=&quot;#bcbec4&quot;&gt;&lt;span style=&quot;font-size: 13.0667px; background-color: rgb(30, 31, 34);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;3. tools.infer.predict_det&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&amp;nbsp; &amp;nbsp; tools.infer.predict_cls&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="fFpk34Q_P3umQofqK6B3-34">
+          <mxGeometry y="200" width="290" height="160" as="geometry" />
         </mxCell>
         <mxCell id="fFpk34Q_P3umQofqK6B3-39" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="-1" y="3" relative="1" as="geometry">
@@ -97,6 +94,10 @@
           <mxGeometry x="-1" y="3" relative="1" as="geometry">
             <mxPoint x="290" y="520" as="sourcePoint" />
             <mxPoint x="400" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="581" y="510" />
+              <mxPoint x="258" y="510" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="fFpk34Q_P3umQofqK6B3-62" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fFpk34Q_P3umQofqK6B3-46" target="fFpk34Q_P3umQofqK6B3-54">
@@ -104,8 +105,8 @@
             <mxPoint x="591" y="510" as="sourcePoint" />
             <mxPoint x="630" y="600" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="581" y="530" />
-              <mxPoint x="925" y="530" />
+              <mxPoint x="581" y="510" />
+              <mxPoint x="925" y="510" />
             </Array>
           </mxGeometry>
         </mxCell>
