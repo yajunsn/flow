@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-05-03T07:45:44.724Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="vbWUljtCqnR4X-AtSlM3" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-03T07:58:01.645Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="wAubI5ceDuvxkUE5UJbO" version="24.3.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1290" dy="618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -50,25 +50,19 @@
             <mxPoint x="430" y="82" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-47" value="predict_det.py TextDetector" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="20" y="665" width="300" height="360" as="geometry">
+        <mxCell id="fFpk34Q_P3umQofqK6B3-47" value="predict_layout.py LayoutPredictor" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="22" y="638" width="218" height="185" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="fFpk34Q_P3umQofqK6B3-48" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;__init__&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="fFpk34Q_P3umQofqK6B3-47" vertex="1">
-          <mxGeometry y="26" width="300" height="34" as="geometry" />
+          <mxGeometry y="26" width="218" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-49" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Parameters&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;det_algorithm: [DB,DB++,EAST,SAST,PSE,FCE,CT]&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;use_onnx&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="fFpk34Q_P3umQofqK6B3-47" vertex="1">
-          <mxGeometry y="60" width="300" height="90" as="geometry" />
+        <mxCell id="fFpk34Q_P3umQofqK6B3-49" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Parameters&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;self.preprocess_op:&amp;nbsp;&lt;br&gt;self.postprocess_op&lt;br&gt;self.predictor_layout&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="fFpk34Q_P3umQofqK6B3-47" vertex="1">
+          <mxGeometry y="60" width="218" height="90" as="geometry" />
         </mxCell>
         <mxCell id="fFpk34Q_P3umQofqK6B3-50" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="fFpk34Q_P3umQofqK6B3-47" vertex="1">
-          <mxGeometry y="150" width="300" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-51" value="__call__" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="fFpk34Q_P3umQofqK6B3-47" vertex="1">
-          <mxGeometry y="180" width="300" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-52" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Steps&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;1.data =&amp;nbsp;{&#39;image&#39;: img}&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 31, 34); color: rgb(188, 190, 196);&quot;&gt;&lt;br&gt;&lt;/span&gt;&amp;nbsp; &amp;nbsp;data = transform(data, self.preprocess_op)&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 31, 34); color: rgb(188, 190, 196);&quot;&gt;&lt;br&gt;&lt;/span&gt;&amp;nbsp; &amp;nbsp; img, shape_list = data&lt;br&gt;&lt;br&gt;2. input_dict[self.input_tensor.name] = img&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 31, 34); color: rgb(188, 190, 196);&quot;&gt;&lt;br&gt;&lt;/span&gt;&amp;nbsp; &amp;nbsp; outputs =self.predictor.run(self.output_tensors, input_dict)&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="fFpk34Q_P3umQofqK6B3-47" vertex="1">
-          <mxGeometry y="210" width="300" height="130" as="geometry" />
+          <mxGeometry y="150" width="218" height="30" as="geometry" />
         </mxCell>
         <mxCell id="fFpk34Q_P3umQofqK6B3-54" value="predict_rec.py TextRecognizer" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="770" y="665" width="370" height="350" as="geometry">
@@ -90,27 +84,6 @@
         <mxCell id="fFpk34Q_P3umQofqK6B3-59" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Steps&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;1.according to&amp;nbsp;rec_algorithm, to get norm_img_batch&lt;br&gt;&lt;br&gt;2. input_dict[self.input_tensor.name] =norm_img_batch&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;outputs =self.predictor.run(self.output_tensors, input_dict)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="fFpk34Q_P3umQofqK6B3-54" vertex="1">
           <mxGeometry y="210" width="370" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-61" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;entryX=0.553;entryY=-0.004;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fFpk34Q_P3umQofqK6B3-46" target="fFpk34Q_P3umQofqK6B3-47" edge="1">
-          <mxGeometry x="-1" y="3" relative="1" as="geometry">
-            <mxPoint x="290" y="520" as="sourcePoint" />
-            <mxPoint x="400" y="520" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="581" y="590" />
-              <mxPoint x="258" y="590" />
-              <mxPoint x="258" y="664" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-62" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fFpk34Q_P3umQofqK6B3-46" target="fFpk34Q_P3umQofqK6B3-54" edge="1">
-          <mxGeometry x="-1" y="3" relative="1" as="geometry">
-            <mxPoint x="591" y="510" as="sourcePoint" />
-            <mxPoint x="630" y="600" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="581" y="600" />
-              <mxPoint x="925" y="600" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="fFpk34Q_P3umQofqK6B3-63" value="utility.py create_predictor" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="410" y="678" width="290" height="220" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
@@ -125,10 +98,30 @@
         <mxCell id="fFpk34Q_P3umQofqK6B3-68" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Steps&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;1.use_onnx&lt;br&gt;&amp;nbsp; &amp;nbsp;model_dir&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 31, 34); color: rgb(188, 190, 196);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;br&gt;2. import onnxruntime as ort&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;sess = ort.InferenceSession(model_file_path)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="fFpk34Q_P3umQofqK6B3-63" vertex="1">
           <mxGeometry y="86" width="290" height="114" as="geometry" />
         </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-69" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fFpk34Q_P3umQofqK6B3-46" target="fFpk34Q_P3umQofqK6B3-63" edge="1">
+        <mxCell id="v6Uf8Jm5niP9Cs89eGYP-0" value="utility.py create_predictor" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="21" y="861" width="220" height="220" as="geometry">
+            <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v6Uf8Jm5niP9Cs89eGYP-1" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="v6Uf8Jm5niP9Cs89eGYP-0">
+          <mxGeometry y="26" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v6Uf8Jm5niP9Cs89eGYP-2" value="__call__" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="v6Uf8Jm5niP9Cs89eGYP-0">
+          <mxGeometry y="56" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="v6Uf8Jm5niP9Cs89eGYP-3" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Steps&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;1.use_onnx&lt;br&gt;&amp;nbsp; &amp;nbsp;model_dir&lt;span style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; background-color: rgb(30, 31, 34); color: rgb(188, 190, 196);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;br&gt;2. import onnxruntime as ort&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;sess = ort.InferenceSession(model_file_path)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="v6Uf8Jm5niP9Cs89eGYP-0">
+          <mxGeometry y="86" width="220" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="v6Uf8Jm5niP9Cs89eGYP-8" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fFpk34Q_P3umQofqK6B3-47" target="v6Uf8Jm5niP9Cs89eGYP-0">
           <mxGeometry x="-1" y="3" relative="1" as="geometry">
-            <mxPoint x="400" y="1010" as="sourcePoint" />
-            <mxPoint x="610" y="950" as="targetPoint" />
+            <mxPoint x="316" y="887" as="sourcePoint" />
+            <mxPoint x="290" y="1015" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v6Uf8Jm5niP9Cs89eGYP-9" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fFpk34Q_P3umQofqK6B3-34" target="fFpk34Q_P3umQofqK6B3-47">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="570" y="590" as="sourcePoint" />
+            <mxPoint x="565" y="688" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
