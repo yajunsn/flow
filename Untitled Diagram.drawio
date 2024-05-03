@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-03T08:06:56.622Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="qWJ5iSdGRUIPA4OEx5hK" version="24.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-03T08:11:42.270Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="GfyHREGlrrsZG1wv74sp" version="24.3.1" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="1290" dy="618" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1843" dy="883" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -64,28 +64,16 @@
         <mxCell id="fFpk34Q_P3umQofqK6B3-50" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="fFpk34Q_P3umQofqK6B3-47" vertex="1">
           <mxGeometry y="150" width="218" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-54" value="predict_rec.py TextRecognizer" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="770" y="665" width="370" height="350" as="geometry">
+        <mxCell id="fFpk34Q_P3umQofqK6B3-54" value="pp-ocr tools.infer.predict_system" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="822" y="665" width="270" height="65" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-55" value="&lt;span style=&quot;text-wrap: nowrap;&quot;&gt;__init__&lt;/span&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="fFpk34Q_P3umQofqK6B3-54" vertex="1">
-          <mxGeometry y="26" width="370" height="34" as="geometry" />
-        </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-56" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Parameters&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;rec_batch_num&lt;br&gt;rec_algorithm: [SRN, RARE, NRTR, SAR, VisionLAN, ViTSTR, ABINet, SPIN,&amp;nbsp;RobustScanner, RFL, SATRN, PREN, CAN ]&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;use_onnx&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="fFpk34Q_P3umQofqK6B3-54" vertex="1">
-          <mxGeometry y="60" width="370" height="90" as="geometry" />
-        </mxCell>
         <mxCell id="fFpk34Q_P3umQofqK6B3-57" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="fFpk34Q_P3umQofqK6B3-54" vertex="1">
-          <mxGeometry y="150" width="370" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-58" value="__call__" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="fFpk34Q_P3umQofqK6B3-54" vertex="1">
-          <mxGeometry y="180" width="370" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="fFpk34Q_P3umQofqK6B3-59" value="&lt;div style=&quot;box-sizing:border-box;width:100%;background:#e4e4e4;padding:2px;&quot;&gt;Steps&lt;/div&gt;&lt;table style=&quot;width:100%;font-size:1em;&quot; cellpadding=&quot;2&quot; cellspacing=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;br&gt;&lt;/td&gt;&lt;td&gt;1.according to&amp;nbsp;rec_algorithm, to get norm_img_batch&lt;br&gt;&lt;br&gt;2. input_dict[self.input_tensor.name] =norm_img_batch&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;outputs =self.predictor.run(self.output_tensors, input_dict)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="fFpk34Q_P3umQofqK6B3-54" vertex="1">
-          <mxGeometry y="210" width="370" height="130" as="geometry" />
+          <mxGeometry y="26" width="270" height="30" as="geometry" />
         </mxCell>
         <mxCell id="fFpk34Q_P3umQofqK6B3-63" value="predict_table.py TableSystem" style="swimlane;fontStyle=2;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="290" y="638" width="290" height="372" as="geometry">
+          <mxGeometry x="374" y="638" width="290" height="372" as="geometry">
             <mxRectangle x="230" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -128,6 +116,28 @@
           <mxGeometry x="-1" y="3" relative="1" as="geometry">
             <mxPoint x="570" y="590" as="sourcePoint" />
             <mxPoint x="565" y="688" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v6Uf8Jm5niP9Cs89eGYP-12" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fFpk34Q_P3umQofqK6B3-34" target="fFpk34Q_P3umQofqK6B3-63">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="591" y="570" as="sourcePoint" />
+            <mxPoint x="141" y="648" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v6Uf8Jm5niP9Cs89eGYP-13" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fFpk34Q_P3umQofqK6B3-68" target="fFpk34Q_P3umQofqK6B3-54">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="660" y="690" as="sourcePoint" />
+            <mxPoint x="445" y="648" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="v6Uf8Jm5niP9Cs89eGYP-14" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="fFpk34Q_P3umQofqK6B3-34" target="fFpk34Q_P3umQofqK6B3-54">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="591" y="570" as="sourcePoint" />
+            <mxPoint x="445" y="648" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="581" y="598" />
+              <mxPoint x="955" y="598" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
